@@ -1,22 +1,26 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class CodePractive {
     public static void main(String[] args) {
-        Scanner scannerNumber = new Scanner(System.in);
 
-        int inputNumber = 0;
-        int targetNumber = 5;
+        int x = 10;
+        int y = 5;
 
-        while (inputNumber != -1) {
-            System.out.println("Enter Number: ");
-             inputNumber = scannerNumber.nextInt();
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
+        System.out.println(x / y);
+        System.out.println(x % y);
 
-             if (inputNumber == targetNumber) {
-                System.out.println("You Enter The " + targetNumber + " Please Print Again");
-             } else {
-                System.out.println("You Enter The: " + inputNumber);
-             }
-        }
-        scannerNumber.close();
+        System.out.println("=========== NEW LINE ===========");
+        System.out.println(x > y);
+        System.out.println(x < y);
+        System.out.println(x == y);
+        System.out.println(x != y);
+
+        System.out.println("=========== NEW LINE ===========");
+        System.out.println(x > 5 && y < 10);
+        System.out.println(x < 5 && y < 10);
+        System.out.println(!(x == y));
     }
 }
