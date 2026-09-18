@@ -13,7 +13,7 @@ public class IfNested {
         System.out.println("How much you want to withdraw");
         int withdrawNumber = inputScanner.nextInt();
 
-        if (accountBalance >= 100) {
+        if (withdrawNumber < accountBalance) {
             if (withdrawNumber % 100 == 0) {
                 System.out.println("Withdraw Successfull");
             } else{
